@@ -1,0 +1,960 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.Mobile-nav {
+  display: none;
+}
+
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 80%;
+  margin-top: 5%;
+}
+
+.Profile-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 48%;
+  margin-top: 5%;
+  grid-gap: 24px;
+}
+
+.Profile-section span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.Profile-section #profile__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 1.5%;
+}
+
+.links {
+  margin-top: 5rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.8rem 2rem;
+  margin: 2rem 15rem;
+  border: 1px solid #eaecf0;
+  background-color: #eaecf0;
+}
+
+.links a:hover {
+  background-color: #d0d5dd;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.links a span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.socials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (0.01fr)[2];
+      grid-template-columns: repeat(2, 0.01fr);
+  padding: 24px 0px;
+  grid-gap: 1rem;
+  background-color: white;
+  margin-left: 48%;
+}
+
+.Contact .Con-Header {
+  margin: 50px 0 0 34.2%;
+}
+
+.Contact .Con-Header h1 {
+  text-align: start;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.Contact .Con-Header p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.Contact .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0px 96px;
+  gap: 2rem;
+}
+
+.Contact .contact-form .names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Contact .contact-form .names #first_name {
+  padding: 10px 14px;
+  width: 348px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.Contact .contact-form .names #last_name {
+  padding: 10px 14px;
+  width: 348px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.Contact .contact-form #email {
+  padding: 10px 14px;
+  width: 720px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.Contact .contact-form #message {
+  padding: 12px 14px;
+  width: 720px;
+  height: 132px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.Contact .contact-form span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.Contact .contact-form .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  width: 720px;
+}
+
+.Contact .contact-form .check #check_btn {
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+}
+
+.Contact .contact-form .check p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.Contact .contact-form #btn_submit {
+  background: #1570ef;
+  border: 1px solid #1570ef;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: 720px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.Contact .contact-form #btn_submit:hover {
+  background-color: #6ea3ec;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+footer {
+  border-top: 1px solid #eaecf0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20rem;
+  margin: 5rem 5%;
+  padding-top: 5rem;
+}
+
+footer .footer-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .Mobile-nav {
+    display: block !important;
+    margin-left: 80%;
+    margin-top: 5%;
+    cursor: pointer;
+  }
+  .top-nav {
+    display: none !important;
+  }
+  .Profile-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 40% !important;
+    margin-top: 10%;
+    grid-gap: 24px;
+  }
+  .Profile-section span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .Profile-section #profile__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 1.5%;
+  }
+  .links {
+    margin-top: 5rem;
+  }
+  .links a {
+    height: 4rem;
+    width: 20rem !important;
+    text-decoration: none;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.8rem 2rem !important;
+    margin: 2.5rem 2.5rem !important;
+    border: 1px solid #EAECF0;
+    border-radius: .5rem;
+    background-color: #EAECF0;
+  }
+  .links a:hover {
+    background-color: #D0D5DD;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  .links a span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .socials {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.01fr)[2];
+        grid-template-columns: repeat(2, 0.01fr);
+    padding: 24px 0px;
+    grid-gap: 1rem;
+    background-color: white;
+    margin-left: 43% !important;
+  }
+  .Contact .Con-Header {
+    margin: 5% 0 0 4% !important;
+  }
+  .Contact .Con-Header h1 {
+    text-align: start;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .Contact .Con-Header p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .Contact .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2.5rem 0px 6rem;
+    gap: 2rem;
+  }
+  .Contact .contact-form .names {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1rem;
+  }
+  .Contact .contact-form .names #first_name {
+    padding: 10px 14px;
+    width: 348px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form .names #last_name {
+    padding: 10px 14px;
+    width: 348px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form #email {
+    padding: 10px 14px;
+    width: 343px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form #message {
+    padding: 12px 14px;
+    width: 343px;
+    height: 132px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .Contact .contact-form .check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: .5rem;
+    width: 311px;
+    height: 48px;
+  }
+  .Contact .contact-form .check #check_btn {
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 6px;
+  }
+  .Contact .contact-form .check p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .Contact .contact-form #btn_submit {
+    background: #1570EF;
+    border: 1px solid #1570EF;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 343px;
+    height: 48px;
+    cursor: pointer;
+  }
+  .Contact .contact-form #btn_submit:hover {
+    background-color: #6ea3ec;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  footer {
+    border-top: 2px solid #EAECF0 !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    padding: 2rem 1rem !important;
+    margin: 0 !important;
+    gap: 2rem !important;
+  }
+  footer .footer-text {
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Mobile-nav {
+    display: none;
+  }
+  .top-nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: 80%;
+    margin-top: 5%;
+  }
+  .Profile-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 40%;
+    margin-top: 10%;
+    grid-gap: 24px;
+  }
+  .Profile-section span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .Profile-section #profile__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 1.5%;
+  }
+  .links {
+    margin-top: 5rem;
+  }
+  .links a {
+    height: 4rem;
+    width: 20rem;
+    text-decoration: none;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.8rem 2rem;
+    margin: 2rem 6rem;
+    border: 1px solid #EAECF0;
+    border-radius: .5rem;
+    background-color: #EAECF0;
+  }
+  .links a:hover {
+    background-color: #D0D5DD;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  .links a span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .socials {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.01fr)[2];
+        grid-template-columns: repeat(2, 0.01fr);
+    padding: 24px 0px;
+    grid-gap: 1rem;
+    background-color: white;
+    margin-left: 43%;
+  }
+  .Contact .Con-Header {
+    margin: 5% 0 0 28%;
+    padding-left: 1rem  !important;
+  }
+  .Contact .Con-Header h1 {
+    text-align: start;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .Contact .Con-Header p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .Contact .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2.5rem 0px 6rem;
+    gap: 2rem;
+  }
+  .Contact .contact-form .names {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1rem;
+  }
+  .Contact .contact-form .names #first_name {
+    padding: 10px 14px;
+    width: 348px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form .names #last_name {
+    padding: 10px 14px;
+    width: 348px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form #email {
+    padding: 10px 14px;
+    width: 343px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form #message {
+    padding: 12px 14px;
+    width: 343px;
+    height: 132px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .Contact .contact-form .check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: .5rem;
+    width: 311px;
+    height: 48px;
+  }
+  .Contact .contact-form .check #check_btn {
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 6px;
+  }
+  .Contact .contact-form .check p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .Contact .contact-form #btn_submit {
+    background: #1570EF;
+    border: 1px solid #1570EF;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 343px;
+    height: 48px;
+    cursor: pointer;
+  }
+  .Contact .contact-form #btn_submit:hover {
+    background-color: #6ea3ec;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  footer {
+    border-top: 2px solid #EAECF0 !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    padding: 2rem 1rem !important;
+    margin: 0 !important;
+    gap: 2rem !important;
+  }
+  footer .footer-text {
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Mobile-nav {
+    display: none;
+  }
+  .top-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 80%;
+    margin-top: 5%;
+  }
+  .Profile-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 48%;
+    margin-top: 5%;
+    grid-gap: 24px;
+  }
+  .Profile-section span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .Profile-section #profile__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 1.5%;
+  }
+  .links {
+    margin-top: 5rem;
+  }
+  .links a {
+    text-decoration: none;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.8rem 2rem;
+    margin: 2rem 15rem;
+    border: 1px solid #EAECF0;
+    background-color: #EAECF0;
+  }
+  .links a:hover {
+    background-color: #D0D5DD;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  .links a span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .socials {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.01fr)[2];
+        grid-template-columns: repeat(2, 0.01fr);
+    padding: 24px 0px;
+    grid-gap: 1rem;
+    background-color: white;
+    margin-left: 48%;
+  }
+  .Contact .Con-Header {
+    margin: 5% 0 0 33%;
+  }
+  .Contact .Con-Header h1 {
+    text-align: start;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .Contact .Con-Header p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .Contact .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2.5rem 0px 6rem;
+    gap: 2rem;
+  }
+  .Contact .contact-form .names {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1rem;
+  }
+  .Contact .contact-form .names #first_name {
+    padding: 10px 14px;
+    width: 348px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form .names #last_name {
+    padding: 10px 14px;
+    width: 348px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form #email {
+    padding: 10px 14px;
+    width: 343px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form #message {
+    padding: 12px 14px;
+    width: 343px;
+    height: 132px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+  .Contact .contact-form span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .Contact .contact-form .check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: .5rem;
+    width: 311px;
+    height: 48px;
+  }
+  .Contact .contact-form .check #check_btn {
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 6px;
+  }
+  .Contact .contact-form .check p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .Contact .contact-form #btn_submit {
+    background: #1570EF;
+    border: 1px solid #1570EF;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 343px;
+    height: 48px;
+    cursor: pointer;
+  }
+  .Contact .contact-form #btn_submit:hover {
+    background-color: #6ea3ec;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  footer {
+    border-top: 2px solid #EAECF0 !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    padding: 2rem 1rem !important;
+    margin: 0 !important;
+    gap: 2rem !important;
+  }
+  footer .footer-text {
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
